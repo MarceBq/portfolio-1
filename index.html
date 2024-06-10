@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Marcelo</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">PRESENTATION</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            
+            <!-- <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li> -->
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt="" />
+        </div>
+        <h1>Marcelo Barrientos</h1>
+        <h2>Software Developer</h2>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>About Me</h2>
+        <p>
+          <span
+            >Hi, I am Marcelo. I spans around 3 years of experience in software
+            development. I am passionate about the software world and constantly
+            seek to expand my knowledge and skills. My journey in software
+            development began with a deep curiosity for how things work and a
+            drive to create solutions that make a difference.</span
+          >
+        </p>
+
+        <div class="fila">
+          <div class="col">
+            <h3>Personal Date</h3>
+            <ul>
+              <li>
+                <strong>Phone Number</strong>
+                +51 947 836 536
+              </li>
+              <li>
+                <strong>Email</strong>
+                marcebq2005@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Games</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Music</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>Travel</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Coding</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>Deport</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>Books</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-cookie-bite"></i>
+                <span>COOK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Professional Skills</h2>
+
+      <h3>Technical Skills</h3>
+
+      <div class="tech-container">
+        <ul class="lg-list">
+          <li>
+            <img src="./img/lng/ts.png" alt="TypeScript" />
+          </li>
+          <li>
+            <img src="./img/lng/css.png" alt="CSS" />
+          </li>
+          <li>
+            <img src="./img/lng/ang.png" alt="Angular" />
+          </li>
+          <li>
+            <img src="./img/lng/js.png" alt="JavaScript" />
+          </li>
+          <li>
+            <img src="./img/lng/angM.png" alt="Angular Material" />
+          </li>
+          <li>
+            <img src="./img/lng/bs.png" alt="Bootstrap" />
+          </li>
+          <li>
+            <img src="./img/lng/ngrx-logo.png" alt="NgRx" />
+          </li>
+          <li>
+            <img src="./img/lng/react.png" alt="React" />
+          </li>
+          <li>
+            <img src="./img/lng/sass.png" alt="Sass" />
+          </li>
+          <li>
+            <img src="./img/lng/tw.png" alt="Tailwind CSS" />
+          </li>
+          <li>
+            <img src="./img/lng/rx.png" alt="RxJS" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Education</h3>
+            <div class="item izq">
+              <h4>Software Engeneering</h4>
+              <span class="casa">Universidad Peruana Ciencias Aplicadas</span>
+              <span class="fecha">2022 - Present</span>
+              <p>
+                I have been pursuing a degree in Software Engineering at UPC in Lima, Peru since 2022. Over the past two years, I have significantly expanded my knowledge and skills in the field of software development.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Autodidact Student</h4>
+              <span class="fecha">2020 - Present</span>
+              <p>
+                I am a student who constantly seeks to learn and expand my knowledge through courses and projects. I am passionate about staying updated with the latest industry trends and continuously improving my skills to tackle new challenges.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Work experience</h3>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">AMG Software solutions</span>
+              <span class="fecha">Nov, 2022 - Present</span>
+              <p>
+                I built reusable code and developed components and modules adhering to the highest coding standards. I fixed issues, updated components, resolved bugs, and troubleshooted code problems. I also supported the design and structuring of projects, assisted in architectural design and planning, and collaborated closely with development teams to define requirements and ensure quality solutions. Key technologies used included JavaScript, Angular, TypeScript, Material, and CSS.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">Freelancer</span>
+              <span class="fecha">2021 - 2022</span>
+              <p>
+                I participated in projects for various companies, correcting code errors, identifying and fixing critical bugs, and creating scalable components. I designed and implemented reusable UI pieces and used the MVC pattern to ensure good application functionality. Key technologies used included Angular, React, TypeScript, JavaScript, SCSS, and Tailwind.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
