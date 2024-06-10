@@ -145,6 +145,15 @@ html {
   font-family: "Righteous";
   margin-bottom: 25px;
 }
+
+.sobremi .fila .col a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 12px;
+  aling-text: center;
+}
+
 .sobremi .fila .col ul {
   list-style: none;
 }
